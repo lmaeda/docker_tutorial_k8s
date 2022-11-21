@@ -35,11 +35,12 @@ spec:
             com.docker.project: tutorial
         spec:
           containers:
-            - image: docker/getting-started
-              name: tutorial
+            - image: hellodocker
+              name: hello
               ports:
                 - containerPort: 80
                   protocol: TCP
               resources: {}
+              imagePullPolicy: IfNotPresent
           restartPolicy: Always
 status: {}
