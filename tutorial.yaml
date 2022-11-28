@@ -35,7 +35,7 @@ spec:
             com.docker.project: tutorial
         spec:
           containers:
-            - image: docker/getting-started
+            - image: lucmaeda/getting-started
               name: tutorial
               ports:
                 - containerPort: 80
